@@ -5,6 +5,6 @@ describe('GET /', () => {
     it('should return a JSON message', async () => {
         const res = await request(app).get('/')
         expect(res.statusCode).toEqual(200)
-        expect(res.body).toHaveProperty('message', 'Hello, CI/CD World!')
+        expect(res.body).toHaveProperty('message', 'This is a test')
     })
 })
